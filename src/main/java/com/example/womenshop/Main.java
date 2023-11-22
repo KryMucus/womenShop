@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         try {
+            // instanciation de produits
             Product p1 = new Shoes("s1", 10, 10,38);
             Product p2= new Clothes("c1", 20, 20, 36);
 
