@@ -63,6 +63,7 @@ public abstract class Product implements Discount,Comparable<Product>{
     if(nbItems<this.nbItems) {
       this.setNbItems(this.nbItems - nbItems);
       income += nbItems * this.price;
+      Stat.adjustCapital(nbItems*this.price);
       System.out.println("Sell OK");
     }
     else throw new IllegalArgumentException("Unavailable product");
