@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutX="159.0" layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Log in" />
+          <Menu mnemonicParsing="false" text="Buy" />
+          <Menu mnemonicParsing="false" text="Sell" />
+          <Menu mnemonicParsing="false" text="Statistics" />
+        </menus>
+      </MenuBar>
+      <TableView layoutX="65.0" layoutY="114.0" prefHeight="187.0" prefWidth="1019.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="75.0" text="Description" />
+            <TableColumn prefWidth="75.0" text="Price" />
+            <TableColumn prefWidth="75.0" text="Quantity" />
+            <TableColumn prefWidth="75.0" text="Discount $" />
+            <TableColumn prefWidth="75.0" text="Discount % " />
+            <TableColumn prefWidth="75.0" text="Motive" />
+            <TableColumn prefWidth="75.0" text="Excl. taxes" />
+            <TableColumn prefWidth="75.0" text="V.A.T" />
+            <TableColumn prefWidth="75.0" text="Final Price" />
+        </columns>
+         <effect>
+            <GaussianBlur radius="0.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="338.0" layoutY="75.0" prefHeight="46.0" prefWidth="1200.0" text="Sales Menu" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Malgun Gothic" size="36.0" />
+         </font>
+      </Label>
+      <VBox layoutX="65.0" layoutY="378.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="153.0" text="Seller" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox prefWidth="150.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="267.0" layoutY="378.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="153.0" text="Client" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox prefWidth="150.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="65.0" layoutY="559.0" prefHeight="200.0" prefWidth="150.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="153.0" text="Payment " textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox prefWidth="150.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
