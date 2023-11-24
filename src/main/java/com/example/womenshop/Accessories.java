@@ -1,6 +1,8 @@
 package com.example.womenshop;
 
-public class Accessories extends Product{
+public class
+
+Accessories extends Product{
 
   public Accessories(String name, double price, int nbItems) {
     super(name, price, nbItems);

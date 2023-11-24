@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Log in" />
+            <Menu mnemonicParsing="false" text="Buy" />
+            <Menu mnemonicParsing="false" text="Sell" />
+            <Menu mnemonicParsing="false" text="Statistics" />
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="338.0" layoutY="75.0" prefHeight="46.0" prefWidth="1200.0" text="Sales Menu" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="Malgun Gothic" size="36.0" />
+         </font>
+      </Label>
+
+      <!-- VBox ajouté ici dans la section children -->
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+          <!-- TableView -->
+          <TableView fx:id="dataTable">
+              <columns>
+                  <TableColumn text="Capital"/>
+                  <TableColumn text="Cost"/>
+                  <TableColumn text="Income"/>
+                  <TableColumn text="Journée"/>
+                  <TableColumn text="Objectif"/>
+              </columns>
+          </TableView>
+
+          <!-- Espace pour le graphe -->
+          <LineChart fx:id="lineChart">
+              <xAxis>
+                  <CategoryAxis/>
+              </xAxis>
+              <yAxis>
+                  <NumberAxis/>
+              </yAxis>
+          </LineChart>
+      </VBox>
+   </children>
+</AnchorPane>

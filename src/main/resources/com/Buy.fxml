@@ -12,7 +12,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <MenuBar layoutX="159.0" layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -27,13 +26,11 @@
         <columns>
           <TableColumn prefWidth="75.0" text="Id" />
           <TableColumn prefWidth="75.0" text="Description" />
-            <TableColumn prefWidth="75.0" text="Price" />
-            <TableColumn prefWidth="75.0" text="Quantity" />
-            <TableColumn prefWidth="75.0" text="Discount $" />
-            <TableColumn prefWidth="75.0" text="Discount % " />
-            <TableColumn prefWidth="75.0" text="Motive" />
-            <TableColumn prefWidth="75.0" text="Excl. taxes" />
-            <TableColumn prefWidth="75.0" text="V.A.T" />
+            <TableColumn prefWidth="100.0" text="Purchase Price" />
+            <TableColumn prefWidth="67.0" text="Quantity" />
+            <TableColumn prefWidth="76.0" text="Delivery" />
+            <TableColumn prefWidth="77.0" text="Excl. taxes" />
+            <TableColumn prefWidth="46.0" text="V.A.T" />
             <TableColumn prefWidth="75.0" text="Final Price" />
         </columns>
          <effect>
@@ -43,14 +40,14 @@
             <Cursor fx:constant="DISAPPEAR" />
          </cursor>
       </TableView>
-      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="338.0" layoutY="75.0" prefHeight="46.0" prefWidth="1200.0" text="Sales Menu" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+      <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="6.0" layoutX="338.0" layoutY="75.0" prefHeight="46.0" prefWidth="1200.0" text="Achat Menu" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
          <font>
             <Font name="Malgun Gothic" size="36.0" />
          </font>
       </Label>
       <VBox layoutX="65.0" layoutY="378.0" prefHeight="200.0" prefWidth="150.0">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="153.0" text="Seller" textAlignment="CENTER">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="153.0" text="Employee" textAlignment="CENTER">
                <font>
                   <Font size="20.0" />
                </font>
